@@ -1,4 +1,4 @@
-package com.company;
+package ga.lab;
 
 public class Main {
 

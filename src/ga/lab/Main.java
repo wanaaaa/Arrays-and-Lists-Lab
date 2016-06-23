@@ -43,8 +43,9 @@ public class Main {
 //
 //
 //        //Problem 5:
-//        _____ = charsToString(new char[]{'h', 'e', 'l', 'l', 'o'});
+        charString = charsToString(new char[]{'h', 'e', 'l', 'l', 'o'});
 //        //how do we print a variable to the command line
+        System.out.println(charString);
 //
 //        _____ = charsToString(new char[]{'t', 'h', 'e', 'r', 'e', '!'});
 //        //how do we print a variable to the command line
@@ -123,4 +124,12 @@ public class Main {
         return summedDoubles;
     }
 
+    public static String charsToString(char[] charArr) {
+        String newStr = "";
+        for (int i = 0; i < charArr.length; i++ ) {
+            newStr = newStr + String.valueOf(charArr[i]);
+        }
+
+        return newStr;
+    }
 } //End of main

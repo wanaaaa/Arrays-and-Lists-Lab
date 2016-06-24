@@ -75,18 +75,20 @@ public class Main {
         reversedStringOrder(myStringList);
 //
 //        //Problem 8:
-//        printOrAdd(use the List you created in problem 6);
+        printOrAdd(myStringList);
 //
 //        //Problem 9:
 //        //Create an int array of an odd size, with the variable name 'oddSizedArray'
 //        //Make sure the size is at least 5.
+        int[] oddSizedArray = new int[]{1,2,1000,4, 7};
+
 //
 //        //Problem 10:
 //        findMiddle(use the array you created in problem 9);
-//        //how do we print a variable to the command line
-//
-//        findMiddle(new int[]{2,7,9,12,15});
-//        //how do we print a variable to the command line
+        //how do we print a variable to the command line
+
+        findMiddle(new int[]{2,7,9,12,15});
+        //how do we print a variable to the command line
 //
 //        findMiddle(new int[]{13, 91, 27, 99, 14, 36, 10});
 //        //how do we print a variable to the command line
@@ -145,8 +147,28 @@ public class Main {
         return newStr;
     }
 
-    public static void reversedStringOrder(ArrayList<String> arr) {
-        for ( int i; i = (arr.size()-1);)
+    public static void reversedStringOrder(List<String> arr) {
+        for ( int i = (arr.size()-1); i >= 0 ;i--) {
+            System.out.println(arr.get(i));
+        }
+
+    }
+
+    public static void printOrAdd(List<String> arr) {
+        if (arr.size() == 10) {
+            for (String word : arr) {
+                System.out.println("printOrAdd begin==============");
+                System.out.println(word);
+            }
+        } else {
+            System.out.println("java " + arr.size());
+        }
+    }
+
+    public static void findMiddle(int[] arr) {
+        int middleNum = arr.length/2 ;
+
+        System.out.println(arr[middleNum]);
 
     }
 } //End of main

@@ -1,5 +1,8 @@
 package ga.lab;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args){
@@ -47,20 +50,29 @@ public class Main {
 //        //how do we print a variable to the command line
         System.out.println(charString);
 //
-//        _____ = charsToString(new char[]{'t', 'h', 'e', 'r', 'e', '!'});
-//        //how do we print a variable to the command line
-//
-//        _____ = charsToString(new char[]{'I', ' ', 'a','m', ' '});
-//        //how do we print a variable to the command line
-//
-//        _____ = charsToString(new char[]{'A', ' ', 'S', 't', 'r', 'i', 'n', 'g', '.'});
-//        //how do we print a variable to the command line
+        charString = charsToString(new char[]{'t', 'h', 'e', 'r', 'e', '!'});
+        //how do we print a variable to the command line
+        System.out.println(charString);
+
+        charString = charsToString(new char[]{'I', ' ', 'a','m', ' '});
+        //how do we print a variable to the command line
+        System.out.println(charString);
+
+        charString = charsToString(new char[]{'A', ' ', 'S', 't', 'r', 'i', 'n', 'g', '.'});
+        //how do we print a variable to the command line
+        System.out.println(charString);
 //
 //        //Problem 6:
-//        //Put your code for problem 6 here
+//        //Put   code for problem 6 here
+        List<String> myStringList = new ArrayList<>();
+        myStringList.add("Hi");
+        myStringList.add("How are u");
+        myStringList.add("Car");
+        myStringList.add("sun");
+        myStringList.add("son");
 //
-//        //Problem 7:
-//        reversedStringOrder(use the List you created in problem 6);
+        //Problem 7:
+        reversedStringOrder(myStringList);
 //
 //        //Problem 8:
 //        printOrAdd(use the List you created in problem 6);
@@ -131,5 +143,10 @@ public class Main {
         }
 
         return newStr;
+    }
+
+    public static void reversedStringOrder(ArrayList<String> arr) {
+        for ( int i; i = (arr.size()-1);)
+
     }
 } //End of main
